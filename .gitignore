@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+
+# Angular
+frontend/node_modules/
+frontend/dist/
+
+# Sanity
+studio/node_modules/
+studio/.sanity/
