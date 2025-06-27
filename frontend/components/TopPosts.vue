@@ -8,12 +8,12 @@ const props = defineProps<{
 //TODO: fetch posts from backend and then group them by section
 
 const groupedPosts = posts.filter(
-  (post) => post.section === props.sectionTitle.toLowerCase()
+  (post) => post.section === props.sectionTitle.toLowerCase() && post.important
 )
 </script>
 
 <template>
-  <section class="bg-card rounded-lg p-4 my-4 md:col-span-1">
+  <section class="bg-card rounded-lg p-4 sticky top-36 mb-8 h-fit">
     <h3 class="text-lg mb-4">Lo más destacado en {{ sectionTitle }}</h3>
     <div class="grid grid-cols-1 gap-4">
       <ul>
