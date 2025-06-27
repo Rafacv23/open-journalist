@@ -24,7 +24,7 @@ const groupedPosts = posts.filter(
           :to="post.url"
           class="block hover:bg-muted/30 rounded-lg p-2 transition-colors duration-200"
         >
-          <div class="flex flex-col md:flex-row gap-4">
+          <div class="flex flex-row md:flex-row gap-4">
             <img
               :src="post.image"
               alt="Imagen de un videojuego"
