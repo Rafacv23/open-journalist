@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+:root {
+  --color-primary: #ffffff;
+  --color-secondary: aliceblue;
+  --color-background: #131313;
+  --color-primary-foreground: rgb(255, 255, 255);
+  --color-card: #4c02e9;
+  --color-accent: #3effcf;
+}
+
+@theme {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-background: var(--color-background);
+  --color-card: var(--color-card);
+  --color-accent: var(--color-accent);
+}
+
+body {
+  color: var(--color-primary);
+  background-color: var(--color-background);
+}
